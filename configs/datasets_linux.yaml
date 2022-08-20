@@ -1,0 +1,33 @@
+clevr:
+  questions_dir: '/mnt/ssd2/Datasets/CLEVR/CLEVR_v1.0/questions'
+  features_dir: '/mnt/shared/clevr/resnet101'
+  #images_dir: '/mnt/ssd2/Datasets/CLEVR/CLEVR_v1.0/images'
+  #images_dir: '/mnt/ssd2/Datasets/CLEVR/clevr_128x128_ar/images'
+  images_dir: '/mnt/ssd2/Datasets/CLEVR/CLEVR_v1.0/images'
+  #images_dir : '/mnt/ssd2/Datasets/CLEVR/preprocessed'
+  vocabs_dir: '/mnt/ssd2/Datasets/CLEVR/vocabs'
+  #vocabs_dir: '/mnt/ssd2/Datasets/CLEVR/cache/vocabs'
+clevr-colab:
+  questions_dir: '/content/drive/MyDrive/questions'
+  features_dir: '/mnt/shared/clevr/resnet101'
+  images_dir: '/content/drive/MyDrive/clevr/images'
+  vocabs_dir: '/content/drive/MyDrive/clevr/vocabs'
+clevr-humans:
+  questions_dir: '/mnt/ssd2/Datasets/CLEVR/CLEVR-Humans'
+  features_dir: '/mnt/shared/clevr/resnet101'
+  #images_dir : '/mnt/ssd2/Datasets/CLEVR/preprocessed'
+  images_dir: '/mnt/ssd2/Datasets/CLEVR/CLEVR_v1.0/images'
+  #images_dir: '/mnt/ssd2/Datasets/CLEVR/clevr_128x128_ar/images'
+  vocabs_dir: '/mnt/ssd2/Datasets/CLEVR/cache/vocabs'
+gqa-balanced:
+  questions_dir: '/run/media/hybridsyntax/Projects/University/Thesis/code/_MyVQA/cache/questions1.2'
+#  images_dir: '/media/hybridsyntax/Windows 10 (SSD)/GQA'
+  #images_dir: '/run/media/hybridsyntax/Workspace/Datasets/GQA/caches'
+  vocabs_dir: '/run/media/hybridsyntax/Projects/University/Thesis/code/_MyVQA/cache/vocabs'
+coco-qa:
+  questions_dir: '/media/hybridsyntax/Workspace/Datasets/COCO-QA'
+  images_dir: '/media/hybridsyntax/Workspace/Datasets/MS-COCO/images'
+  vocabs_dir: 'cache/vocabs'
+logs-dir: '../logs'
+
+#logs-dir: '/content/drive/MyDrive/logs'

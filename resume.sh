@@ -1,0 +1,1 @@
+python main.py --train --model mmfrra --dataset clevr --checkpoint "../logs/mmfrra_on_clevr/version_168/checkpoints/last_epoch=119-step=1312439-val_loss=0.40-val_acc=0.85.ckpt" --name "orig_method_02"  --comments "" --dataset_subset "full"

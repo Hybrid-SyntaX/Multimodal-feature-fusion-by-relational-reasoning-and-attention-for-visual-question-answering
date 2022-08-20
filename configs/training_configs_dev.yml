@@ -1,0 +1,45 @@
+BATCH_SIZE: 64
+LR_DECAY_LIST: [10, 12]
+LOSS_REDUCTION: mean
+#LR_BASE : 0.001
+LR_BASE :  0.00 #, #0.00025  #0.00025
+MAX_EPOCHS: 5
+#GRAD_NORM_CLIP: 0.25
+GRAD_NORM_CLIP: 10
+GRAD_ACCU_STEPS: 1
+OPT_PARAMS_BETAS: [0.9,0.999]
+OPT_PARAMS_EPS : 1e-9
+WARMUP_EPOCH: null # 3
+LR_DECAY_EPOCH : 10
+LR_DECAY_R : null #0.2
+USE_SCHEDULER: false
+NUM_WORKERS: 0
+AUTO_LR_FIND: false
+STOCHASTIC_WEIGHT_AVG: false
+USE_DECAY: false
+USE_WARMUP: false
+LR_MAX: 1 #0.09
+SCHEDULER: null #GradualWarmUpAndDecay # CyclicLR #GradualWarmUpAndDecay # 'GradualWarmUpAndDecay' #'OneCycleLR' #'GradualWarmUpAndDecay'
+SCHEDULER_PARAMS:
+  STEP_SIZE_MULTIPLIER: 5
+  MODE: triangular
+  #warmup_epochs: 3
+  #warmup_step: 0.001
+  #decay_epoch: 9
+  #decay_step: 2
+  #decay_rate: 0.667
+AUTO_GRAD_CLIP: true
+AUTO_GRAD_CLIP_PERCENTILE: 10
+WEIGHT_DECAY: 0
+#MULTISTEP_LR:
+#  0: 0.001
+#  1: 0.002
+#  2: 0.003
+#  3: 0.003
+#  4: 0.003
+#  5: 0.003
+#  6: 0.003
+#  7: 0.003
+#  8: 0.003
+#  9: 0.003
+

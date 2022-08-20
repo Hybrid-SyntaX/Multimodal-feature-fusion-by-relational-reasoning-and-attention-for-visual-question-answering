@@ -1,0 +1,50 @@
+BATCH_SIZE: 64 #!! 8 makes training faster 128 * 32 = butd
+GRAD_ACCU_STEPS: 1  #8
+MAX_EPOCHS: 120 #next cycle 120 #128 #64 max common,
+
+LR_BASE : 0.0003   #0.00025 ## #0.003 # 0.0005 #0.005  pretty good 0.05 bad 0.0005 also good 0.00005 ok
+LR_MAX: 0.003 #  0.09  #0.09 #0.09 good
+#SCHEDULER: OneCycleLR
+#SCHEDULER: null
+SCHEDULER: CyclicLR #GradualWarmUpAndDecay # CyclicLR #GradualWarmUpAndDecay # 'GradualWarmUpAndDecay' #'OneCycleLR' #'GradualWarmUpAndDecay'
+SCHEDULER_PARAMS:
+  STEP_SIZE_MULTIPLIER: 2
+  MODE: triangular
+#SCHEDULER: GradualWarmUpAndDecay  # GradualWarmUpAndDecay # 'GradualWarmUpAndDecay' # 'GradualWarmUpAndDecay' #'OneCycleLR' #'GradualWarmUpAndDecay'
+#SCHEDULER_PARAMS:
+#  warmup_epochs: 3
+#  warmup_step: 0.001
+#  decay_epoch: 9
+#  decay_step: 2
+#  decay_rate:  0.667 #0.2
+##SCHEDULER: null
+OPT_PARAMS_BETAS: [0.9,0.999]
+OPT_PARAMS_EPS : 1e-8 # 1e-9
+LOSS_REDUCTION: mean
+
+#LR_DECAY_LIST: null #[10, 12]
+GRAD_NORM_CLIP: null #10  # based on butd 0.25, -1, 10, 50, 20 (sorta clevr)
+WARMUP_EPOCH:  null #3
+LR_DECAY_EPOCH : null #10
+LR_DECAY_R :  null #0.2
+NUM_WORKERS: 8
+AUTO_LR_FIND: false
+STOCHASTIC_WEIGHT_AVG: false
+USE_DECAY: false
+USE_WARMUP: false
+AUTO_GRAD_CLIP: true
+AUTO_GRAD_CLIP_PERCENTILE: 10
+#WEIGHT_DECAY: 1E-10 #1e4 probably too high --> nan loss 000001 -> nsn loss  WEIGHT_DECAY > OPT_PARAMS_EPS
+WEIGHT_DECAY: 0  #1e-9 -> nan
+#-3 too low
+#MULTISTEP_LR:
+#  0: 0.001
+#  1: 0.002
+#  2: 0.003
+#  3: 0.003
+#  4: 0.003
+#  5: 0.003
+#  6: 0.003
+#  7: 0.003
+#  8: 0.003
+#  9: 0.003

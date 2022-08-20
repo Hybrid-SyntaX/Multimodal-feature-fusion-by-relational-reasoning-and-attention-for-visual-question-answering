@@ -1,0 +1,14 @@
+clevr-humans:
+  questions_dir: 'C:\CLEVR-Humans\clevr_humans_resnet101\questions'
+  images_dir: 'C:\CLEVR-Humans\clevr_humans_resnet101'
+  vocabs_dir: 'C:\CLEVR-Humans\vocabs'
+#gqa-balanced:
+#  questions_dir: '/media/hybridsyntax/Windows 10 (SSD)/GQA/questions1.2'
+#  images_dir: '/media/hybridsyntax/Windows 10 (SSD)/GQA'
+#  #images_dir: '/media/hybridsyntax/Projects/University/Thesis/code/MyVQA/cache'
+#  vocabs_dir: 'cache/vocabs'
+#coco-qa:
+#  questions_dir: '/media/hybridsyntax/Workspace/Datasets/COCO-QA'
+#  images_dir: '/media/hybridsyntax/Workspace/Datasets/MS-COCO/images'
+#  vocabs_dir: 'cache/vocabs'
+logs-dir: 'P:\University\Thesis\code\logs'
